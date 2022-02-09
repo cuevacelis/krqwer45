@@ -15,8 +15,6 @@ function App() {
   }
 
   function clickList(task) {
-    //const arrayModify = tasks;
-    //arrayModify[task.id - 1].done = !arrayModify[task.id - 1].done;
     let array = [...tasks];
     array.splice(task.id - 1, 1, {
       id: task.id,
